@@ -1,0 +1,10 @@
+PKG=@BRAND_COMPANY_SHORTNAME@@PACKAGE@-@MAJOR_VERSION_DASHED@
+ARCH=@build_cpu@
+BASEDIR=@prefix@
+CATEGORY=application
+EMAIL=davidd@electro.mine.nu
+NAME=Advanced Command Line Argument Parser
+VENDOR=dakka
+VERSION=@VERSION_DASHED@
+OWNER=davidd
+GROUP=davidd
