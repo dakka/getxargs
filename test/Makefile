@@ -95,13 +95,13 @@ BRAND_COMPANY_SHORTNAME = dakka
 BRAND_DESCRIPTION =  GETXARGS contains classes for an Advanced Command Line Argument Parser
 BRAND_SUMMARY = Advanced Command Line Argument Parser
 CC = sccache gcc
-CCDEPMODE = depmode=gcc
+CCDEPMODE = depmode=none
 CFLAGS =  -g -O2 -Wall
 CPP = sccache gcc -E
 CPPFLAGS = 
 CXX = sccache g++ -ggdb -O3 -std=gnu++20
 CXXCPP = sccache g++ -ggdb -O3 -std=gnu++20 -E
-CXXDEPMODE = depmode=gcc
+CXXDEPMODE = depmode=none
 CXXFLAGS =  -O3 -Wall
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
@@ -199,7 +199,7 @@ mandir = ${datarootdir}/man
 mkdir_p = /usr/bin/mkdir -p
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /usr/local
+prefix = /home/davidd/tmp
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
