@@ -39,7 +39,7 @@ String::~String ()
 **---------------------------------------------------------------------------*/
 void String::parse (char *str)
 {
-    char *buff(new char[MAXSTRLEN]), *s(buff), c;
+    char buff[MAXSTRLEN], *s(buff), c;
 
     for (char *d(str); *d && s < buff + MAXSTRLEN; d++, s++)
     {
@@ -56,7 +56,6 @@ void String::parse (char *str)
     delete[] *argloc;
     *argloc = new char[strlen(buff)+1];
     strcpy (*argloc, buff);
-    delete[] buff;
     parsed++;
 }
 

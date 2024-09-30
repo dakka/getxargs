@@ -10,6 +10,7 @@ int main (int argc, char **argv)
     Arglist argl (32, 32, KEEPUNSWITCHED, '@', "parent unswitched values");
 	 argl.setversion("1.01");
 
+    argl.mk_usagelong (cerr);
     if (argl.add ("h,H,help,HELP", "", "?", "help arg", &help)
      || argl.add ("A,AARGLIST", "argument file", funcA)
      || argl.add ("B,BARGLIST", "argument file", funcB)
